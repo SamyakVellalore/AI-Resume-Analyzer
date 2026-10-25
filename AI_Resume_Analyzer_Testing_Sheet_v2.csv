@@ -1,0 +1,12 @@
+Test ID,Feature,Test Procedure,Expected Result,Actual Result,Status
+TC01,PDF resume upload,Upload a valid PDF resume.,Resume is accepted and its text is extracted successfully.,The PDF resume was uploaded and processed successfully.,PASS
+TC02,DOCX resume upload,Upload a valid DOCX resume.,Resume is accepted and its text is extracted successfully.,The DOCX resume was uploaded and processed successfully.,PASS
+TC03,Unsupported file type,Attempt to upload an unsupported file type.,Unsupported file type is rejected or a clear error message is shown.,Unsupported file type was handled as expected.,PASS
+TC04,Skill extraction,Upload a resume containing known technical skills and review the extracted skills.,Relevant skills present in the resume are detected and displayed.,Relevant skills were extracted and displayed.,PASS
+TC05,Job-role matching,Upload a resume and inspect the ranked job roles and match scores.,Job roles are ranked and match scores are displayed.,Ranked job roles and match scores were displayed.,PASS
+TC06,Top-three recommendations,Review the recommendations after uploading a resume.,The top three job-role recommendations are displayed when sufficient roles are available.,Top-three recommendations were displayed.,PASS
+TC07,Skill-gap analysis,Select a job role and inspect matched and missing skills.,The system displays skills that match the role and skills that are missing.,Matched skills and missing skills were displayed.,PASS
+TC08,Learning roadmap,Review the roadmap for a selected job role.,The system suggests learning areas based on identified skill gaps.,A learning roadmap was displayed.,PASS
+TC09,Report download,Use the report download controls and open the downloaded file.,The report downloads successfully and can be opened.,The report downloaded successfully.,PASS
+TC10,Very short/empty resume,Upload a valid PDF/DOCX with little or no readable text.,The system handles insufficient text gracefully and provides a clear message rather than crashing.,Insufficient resume content was handled as expected.,PASS
+TC11,Different resume profiles,Test at least three resumes with different skill sets.,Extracted skills and job-role rankings respond appropriately to differences in resume content.,Different resume profiles were tested and results changed appropriately.,PASS
